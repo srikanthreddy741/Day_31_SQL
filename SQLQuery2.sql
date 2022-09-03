@@ -34,7 +34,9 @@ select * from employee_Payrolll
 
 --UC-7--
 select gender,sum(salary) from employee_Payrolll group by gender;
-
+select gender,Avg(salary) from employee_Payrolll group by gender;
+select gender,min(salary) from employee_Payrolll group by gender;
+select gender,max(salary) from employee_Payrolll group by gender
 --UC-8--
 Alter table employee_Payrolll add
 phone varchar(15),
